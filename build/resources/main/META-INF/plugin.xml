@@ -1,0 +1,23 @@
+<idea-plugin>
+  <change-notes>
+      Add change notes here.&lt;br&gt;
+      &lt;em&gt;most HTML tags may be used&lt;/em&gt;</change-notes>
+  <idea-version since-build="193.5233" until-build="193.*"/>
+  <id>myplugin.untitled</id>
+  <name>DemoTest</name>
+  <vendor>Test</vendor>
+  <version>2.1</version>
+  <description>
+    My demo idea plugin for actions, message and dialogs
+    </description>
+  <depends>com.intellij.modules.lang</depends>
+  <extensions defaultExtensionNs="com.intellij"/>
+  <actions>
+    <action id="action.GenerateTestTemplateAction" class="test.GenerateTestTemplate" text="create test">
+      <add-to-group group-id="GenerateGroup" anchor="after" relative-to-action="Generate.EqualsAndHashcode.Dart"/>
+    </action>
+    <action id="action.GeneratePrepareForTestAction" class="test.GeneratePrepareAction" text="create prepare">
+      <add-to-group group-id="GenerateGroup" anchor="after" relative-to-action="Generate.EqualsAndHashcode.Dart"/>
+    </action>
+  </actions>
+</idea-plugin>

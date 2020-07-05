@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="gener.main" target="1.8" />
+      <module name="gener.test" target="1.8" />
+      <module name="generate.main" target="1.8" />
+      <module name="generate.test" target="1.8" />
+      <module name="generate_tét.main" target="1.8" />
+      <module name="generate_tét.test" target="1.8" />
+      <module name="myplugin.untitled.main" target="1.8" />
+      <module name="myplugin.untitled.test" target="1.8" />
+      <module name="untitled.main" target="1.8" />
+      <module name="untitled.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,33 @@
+<idea-plugin>
+    <id>myplugin.untitled</id>
+    <name>DemoTest</name>
+    <vendor>Test</vendor>
+    <version>2.1</version>
+
+    <description><![CDATA[
+    My demo idea plugin for actions, message and dialogs
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+    <depends>com.intellij.modules.lang</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="action.GenerateTestTemplateAction" class="test.GenerateTestTemplate" text="create test">
+            <!--suppress PluginXmlValidity -->
+            <add-to-group group-id="GenerateGroup" anchor="after" relative-to-action="Generate.EqualsAndHashcode.Dart"/>
+        </action>
+        <action id="action.GeneratePrepareForTestAction" class="test.GeneratePrepareAction" text="create prepare">
+            <!--suppress PluginXmlValidity -->
+            <add-to-group group-id="GenerateGroup" anchor="after" relative-to-action="Generate.EqualsAndHashcode.Dart"/>
+        </action>
+    </actions>
+</idea-plugin>
